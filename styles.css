@@ -1,0 +1,414 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* สีฟ้าอ่อน */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    border-bottom: 1px solid #dcdcdc; /* ขอบล่างเบาๆ */
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-menu li {
+    margin-left: 20px; /* เว้นระยะห่างระหว่างรายการ */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #0033cc; /* ตัวหนังสือสีน้ำเงิน */
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar-menu a:hover {
+    color: #0056b3; /* สีตัวหนังสือเมื่อ hover */
+}
+
+/* Profile Section Styles */
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff6600; /* สีส้ม */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e55b00; /* สีส้มเข้มเมื่อ hover */
+}
+
+.image-container {
+    flex-shrink: 0;
+    margin-left: auto; /* ขยับรูปภาพไปทางขวา */
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Blog Section Styles */
+.blog-container {
+    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.view-all {
+    font-size: 0.9rem;
+    color: #007bff; /* สีฟ้า */
+    text-decoration: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    border: 1px solid #ddd; /* ขอบเบาๆ */
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px); /* ทำให้แต่ละกล่องมีความกว้างครึ่งหนึ่งของพื้นที่และเว้นระยะห่าง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 0 20px 0;
+}
+
+.box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Featured Works Section Styles */
+.featured-works-container {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.featured-works-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.featured-boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featured-box {
+    display: flex
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #ffffff; /* สีพื้นหลังของฟุตเตอร์ */
+    padding: 20px;
+    text-align: center; /* จัดข้อความและโลโก้ให้อยู่ตรงกลาง */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+}
+
+.social-media {
+    margin-bottom: 10px; /* ระยะห่างด้านล่างของกลุ่มไอคอน */
+}
+
+.social-icon {
+    margin: 0 10px; /* ระยะห่างระหว่างไอคอน */
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 30px; /* ขนาดของไอคอน */
+    height: auto; /* คงอัตราส่วน */
+    vertical-align: middle; /* จัดตำแหน่งแนวตั้ง */
+    transition: opacity 0.3s ease;
+}
+
+.social-icon img:hover {
+    opacity: 0.7; /* สีของไอคอนเมื่อ hover */
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #555; /* สีของข้อความลิขสิทธิ์ */
+    margin: 0;
+}
+
+/* Blog Section Styles */
+.blog-container {
+    background-color: #e0f7fa; /* สีฟ้าอ่อนสำหรับพื้นหลัง */
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px; /* เพิ่มความนุ่มนวลที่มุม */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.view-all {
+    font-size: 0.9rem;
+    color: #007bff; /* สีฟ้า */
+    text-decoration: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #ffffff; /* พื้นหลังสีขาวสำหรับแต่ละกล่อง */
+    border: 1px solid #ddd; /* ขอบเบาๆ */
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px); /* ทำให้แต่ละกล่องมีความกว้างครึ่งหนึ่งของพื้นที่และเว้นระยะห่าง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 0 20px 0;
+}
+
+.box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: 200px; /* Reduce width on smaller screens */
+        top: 0;
+        right: 0;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .text-content {
+        padding: 0 10px;
+    }
+
+    .profile-pic {
+        max-width: 150px;
+    }
+
+    .blog-container .boxes {
+        flex-direction: column;
+    }
+
+    .featured-boxes {
+        flex-direction: column;
+    }
+
+    .featured-box {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu a {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+
+    .featured-box {
+        padding: 10px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .image-container {
+        margin: 0 0 20px 0; /* Margin at the bottom of the image on smaller screens */
+    }
+
+    .profile-pic {
+        max-width: 150px; /* Adjust image size on smaller screens */
+    }
+
+    .text-content {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+
+.blog-container {
+    background-color: #e0f7fa; /* สีฟ้าอ่อนสำหรับพื้นหลัง */
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px; /* เพิ่มความนุ่มนวลที่มุม */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.view-all {
+    font-size: 0.9rem;
+    color: #007bff; /* สีฟ้า */
+    text-decoration: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #ffffff; /* พื้นหลังสีขาวสำหรับแต่ละโพสต์ */
+    border: 1px solid #ddd; /* ขอบเบาๆ */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 0 10px 0;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container .blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดเนื้อหาให้อยู่กลางแนวตั้ง */
+    gap: 40px;
+}
